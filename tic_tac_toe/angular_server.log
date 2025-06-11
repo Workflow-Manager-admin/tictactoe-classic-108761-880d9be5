@@ -1,0 +1,421 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.276 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.400 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.504 seconds]
+
+▲ [WARNING] TS-998113: All imports are unused [plugin angular-compiler]
+
+    src/app/app.component.ts:7:2:
+      7 │   imports: [TicTacToeClassicComponent],
+        ╵   ~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:3:11:
+      3 │     <span *ngIf="!winner && !isDraw">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:6:11:
+      6 │     <span *ngIf="winner" class="accent-win">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:9:11:
+      9 │     <span *ngIf="!winner && isDraw">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:16:7:
+      16 │       *ngFor="let row of board; let i = index"
+         ╵        ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:21:9:
+      21 │         *ngFor="let cell of row; let j = index"
+         ╵          ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:33:15:
+      33 │         <span *ngIf="cell" class="cell-letter">{{ cell }}</span>
+         ╵                ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <router-outlet />
+          ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'h2'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:2:26:
+      2 │   <h2 class="player-turn" [ngClass]="{x: isXTurn, o: !isXTurn}">
+        ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:25:8:
+      25 │         [ngClass]="{
+         ╵         ~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 40 in [isBoardActive && !board.flat().some(x => x)] in /home/kavia/workspace/code-generation/tictactoe-classic-108761-880d9be5/tic_tac_toe/src/app/tic-tac-toe-classic.component.html@38:64 [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:64:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5: Argument of type 'undefined' is not assignable to parameter of type '(value: string, index: number, array: string[]) => unknown'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:100:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                                                             ~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.266 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:3:11:
+      3 │     <span *ngIf="!winner && !isDraw">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:6:11:
+      6 │     <span *ngIf="winner" class="accent-win">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:9:11:
+      9 │     <span *ngIf="!winner && isDraw">
+        ╵            ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:16:7:
+      16 │       *ngFor="let row of board; let i = index"
+         ╵        ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:21:9:
+      21 │         *ngFor="let cell of row; let j = index"
+         ╵          ~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:33:15:
+      33 │         <span *ngIf="cell" class="cell-letter">{{ cell }}</span>
+         ╵                ~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'h2'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:2:26:
+      2 │   <h2 class="player-turn" [ngClass]="{x: isXTurn, o: !isXTurn}">
+        ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'button'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:25:8:
+      25 │         [ngClass]="{
+         ╵         ~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 40 in [isBoardActive && !board.flat().some(x => x)] in /home/kavia/workspace/code-generation/tictactoe-classic-108761-880d9be5/tic_tac_toe/src/app/tic-tac-toe-classic.component.html@38:64 [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:64:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5: Argument of type 'undefined' is not assignable to parameter of type '(value: string, index: number, array: string[]) => unknown'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:100:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                                                             ~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:6:15:
+      6 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.413 seconds]
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 40 in [isBoardActive && !board.flat().some(x => x)] in /home/kavia/workspace/code-generation/tictactoe-classic-108761-880d9be5/tic_tac_toe/src/app/tic-tac-toe-classic.component.html@38:64 [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:64:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:7:15:
+      7 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5: Argument of type 'undefined' is not assignable to parameter of type '(value: string, index: number, array: string[]) => unknown'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:100:
+      39 │ ...start()" [disabled]="isBoardActive && !board.flat().some(x => x)">
+         ╵                                                             ~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:7:15:
+      7 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.332 seconds]
+
+✘ [ERROR] NG9: Property 'isBoardEmpty' does not exist on type 'TicTacToeClassicComponent'. [plugin angular-compiler]
+
+    src/app/tic-tac-toe-classic.component.html:39:81:
+      39 │ ...n" (click)="restart()" [disabled]="isBoardActive && isBoardEmpty">
+         ╵                                                        ~~~~~~~~~~~~
+
+  Error occurs in the template of component TicTacToeClassicComponent.
+
+    src/app/tic-tac-toe-classic.component.ts:7:15:
+      7 │   templateUrl: './tic-tac-toe-classic.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  14.38 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 104.68 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-DWPYWAKY.mjs   | -                |  14.82 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.324 seconds]
+
+Page reload sent to client(s).

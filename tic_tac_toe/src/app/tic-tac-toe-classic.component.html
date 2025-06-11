@@ -1,0 +1,43 @@
+<div class="ttt-container">
+  <h2 class="player-turn" [ngClass]="{x: isXTurn, o: !isXTurn}">
+    <span *ngIf="!winner && !isDraw">
+      Player <span class="big-letter">{{ isXTurn ? 'X' : 'O' }}</span>'s turn
+    </span>
+    <span *ngIf="winner" class="accent-win">
+      Player <span class="big-letter">{{ winner }}</span> wins! 🎉
+    </span>
+    <span *ngIf="!winner && isDraw">
+      It's a draw!
+    </span>
+  </h2>
+
+  <div class="board" role="grid" aria-label="Tic Tac Toe board">
+    <div
+      *ngFor="let row of board; let i = index"
+      class="row"
+      role="row"
+    >
+      <button
+        *ngFor="let cell of row; let j = index"
+        class="cell"
+        type="button"
+        [disabled]="!!cell || !isBoardActive"
+        [ngClass]="{
+          x: cell === 'X',
+          o: cell === 'O',
+          active: !cell && isBoardActive
+        }"
+        (click)="makeMove(i, j)"
+        [attr.aria-label]="getCellAriaLabel(i, j)"
+      >
+        <span *ngIf="cell" class="cell-letter">{{ cell }}</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="game-actions">
+    <button class="restart-btn" (click)="restart()" [disabled]="isBoardActive && isBoardEmpty">
+      Restart Game
+    </button>
+  </div>
+</div>
